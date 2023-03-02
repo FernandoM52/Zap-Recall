@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import Topo from "./components/Topo"
+import styled from "styled-components";
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Titulo>
+        <Topo></Topo>
+      </Titulo>
+    </>
   );
 }
 
-export default App;
+const Titulo = styled.div`
+background-color: black;
+width: 375px;
+height: 667px;
+margin: 0 auto ;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+`

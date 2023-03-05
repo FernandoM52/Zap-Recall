@@ -1,16 +1,17 @@
 import styled from "styled-components";
 import { FiPlay } from "react-icons/fi"
 
-export default function Card() {
+export default function Card({ card, id }) {
+    const { question, answer, } = card;
     return (
         <FlashCard>
-            <p>Pergunta 1</p>
+            <p>Pergunta {id + 1}</p>
             <FiPlay />
         </FlashCard >
     );
 }
 
-const FlashCard = styled.div`
+const FlashCard = styled.li`
 background-color: #FFFFFF;
 width: 300px;
 height: 65px;
@@ -31,5 +32,6 @@ p{
 svg{
     padding-right: 15px;
     font-size: 20px;
+    cursor : pointer
 }
 `

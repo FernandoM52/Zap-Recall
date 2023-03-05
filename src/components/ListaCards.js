@@ -5,12 +5,18 @@ import CARDS from "../mock"
 export default function ListaCards() {
     return (
         <ContainerCards>
-            <Card />
+            {CARDS.map((c, i) => (
+                <Card
+                    key={i}
+                    card={c}
+                    id={i}
+                />
+            ))}
         </ContainerCards>
     );
 }
 
-const ContainerCards = styled.div`
+const ContainerCards = styled.ul`
 display: flex;
 flex-direction: column;
 `

@@ -20,6 +20,10 @@ align-items: center;
 justify-content: center;
 
 p{
+    color: #333333;
     font-family: 'Recursive', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
 }
 `

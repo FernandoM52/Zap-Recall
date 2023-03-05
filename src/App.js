@@ -1,5 +1,5 @@
 import Topo from "./components/Topo"
-import Cards from "./components/Cards";
+import ListaCards from "./components/ListaCards";
 import Footer from "./components/Footer";
 import styled from "styled-components";
 export default function App() {
@@ -7,7 +7,7 @@ export default function App() {
     <>
       <ContainerApp>
         <Topo />
-        <Cards />
+        <ListaCards />
         <Footer />
       </ContainerApp>
     </>

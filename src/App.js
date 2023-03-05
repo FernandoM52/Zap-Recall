@@ -1,17 +1,21 @@
 import Topo from "./components/Topo"
+import Cards from "./components/Cards"
+import Footer from "./components/Footer";
 import styled from "styled-components";
 export default function App() {
   return (
     <>
-      <Titulo>
-        <Topo></Topo>
-      </Titulo>
+      <ContainerApp>
+        <Topo />
+        <Cards />
+        <Footer />
+      </ContainerApp>
     </>
   );
 }
 
-const Titulo = styled.div`
-background-color: black;
+const ContainerApp = styled.div`
+background-color: #FB6B6B;
 width: 375px;
 height: 667px;
 margin: 0 auto ;

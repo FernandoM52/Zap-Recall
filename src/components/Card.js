@@ -12,9 +12,16 @@ export default function Card({ pergunta, resposta, index, contador, setContador 
     const quaseLembrei = 2;
     const lembrei = 3;
 
+
+
     function girarCard() {
         const proximoCard = virarCard + 1;
-        setVirarCard(proximoCard);
+        if (virarCard === 0 && !respondido) {
+            setVirarCard(proximoCard);
+        } else if (virarCard === 1 || virarCard === 2) {
+            setVirarCard(proximoCard)
+        };
+
     }
 
     function responder(resposta) {

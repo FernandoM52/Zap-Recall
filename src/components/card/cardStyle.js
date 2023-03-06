@@ -34,7 +34,8 @@ padding-right: 15px;
 width: 20px;
 cursor : ${({ respondido }) => respondido ? "default" : "pointer"};
 }
-`
+`;
+
 export const CardPergunta = styled(FlashCard)`
 background-color: #FFFFD4;
 position: relative;
@@ -56,7 +57,8 @@ img{
     right: 0%;
     bottom: 6px;
 }
-`
+`;
+
 export const CardResposta = styled.li`
 background-color: #FFFFD4;
 width: 300px;
@@ -113,4 +115,4 @@ button:nth-child(3){
     margin-right: 17px;
     background-color: #2FBE34;
 }
-`
+`;

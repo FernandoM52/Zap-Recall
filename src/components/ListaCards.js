@@ -1,7 +1,6 @@
 import Card from "./card/Card";
 import styled from "styled-components";
-import CARDS from "../mock"
-import { useState } from "react";
+import CARDS from "../mock";
 
 export default function ListaCards({ contador, setContador }) {
     return (
@@ -24,4 +23,4 @@ const ContainerCards = styled.ul`
 display: flex;
 flex-direction: column;
 padding-bottom: 100px;
-`
+`;

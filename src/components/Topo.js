@@ -24,4 +24,4 @@ font-weight: 400;
 font-size: 36px;
 line-height: 44px;
 }
-`
+`;

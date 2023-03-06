@@ -50,7 +50,7 @@ export default function Card({ pergunta, resposta, index, contador, setContador 
             }
             {
                 virarCard === 1 &&
-                <CardPergunta>
+                <CardPergunta data-test="flashcard">
                     <p data-test="flashcard-text">{pergunta}</p>
                     <img
                         data-test="turn-btn"
@@ -62,7 +62,7 @@ export default function Card({ pergunta, resposta, index, contador, setContador 
             }
             {
                 virarCard === 2 &&
-                <CardResposta>
+                <CardResposta data-test="flashcard">
                     <p data-test="flashcard-text">{resposta}</p>
                     <div>
                         <button data-test="no-btn" onClick={() => responder(naoLembrei)}>Não<br></br>lembrei</button>

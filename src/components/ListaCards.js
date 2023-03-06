@@ -1,4 +1,4 @@
-import Card from "./Card";
+import Card from "./card/Card";
 import styled from "styled-components";
 import CARDS from "../mock"
 import { useState } from "react";

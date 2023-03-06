@@ -2,11 +2,15 @@ import Topo from "./components/Topo"
 import ListaCards from "./components/ListaCards";
 import Footer from "./components/Footer";
 import styled from "styled-components";
+import { useState } from "react";
+
 export default function App() {
+  const [contador, setContador] = useState(0);
+
   return (
     <ContainerApp>
       <Topo />
-      <ListaCards />
+      <ListaCards contador={contador} setContador={setContador} />
       <Footer />
     </ContainerApp>
   );

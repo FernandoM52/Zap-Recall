@@ -11,6 +11,7 @@ export default function Footer() {
 
 const Rodape = styled.footer`
 position: fixed;
+z-index: 2;
 bottom: 0;
 background-color: #ffffff;
 width: 375px;

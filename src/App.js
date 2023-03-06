@@ -4,20 +4,18 @@ import Footer from "./components/Footer";
 import styled from "styled-components";
 export default function App() {
   return (
-    <>
-      <ContainerApp>
-        <Topo />
-        <ListaCards />
-        <Footer />
-      </ContainerApp>
-    </>
+    <ContainerApp>
+      <Topo />
+      <ListaCards />
+      <Footer />
+    </ContainerApp>
   );
 }
 
 const ContainerApp = styled.div`
 background-color: #FB6B6B;
 width: 375px;
-height: 100vh;
+height: 100%;
 margin: 0 auto ;
 
 display: flex;

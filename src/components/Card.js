@@ -6,19 +6,21 @@ export default function Card({ card, id, virarCard, girarCard }) {
     const { question, answer, } = card;
     return (
         <>
-            {virarCard === 0 && <FlashCard>
-                <p>Pergunta {id + 1}</p>
-                <img src={play} alt="Card Padrão" onClick={() => girarCard(card)}></img></FlashCard>
+            {virarCard === 0 &&
+                <FlashCard data-test="flashcard">
+                    <p data-test="flashcard-text">Pergunta {id + 1}</p>
+                    <img data-test="play-btn" src={play} alt="Card Padrão" onClick={() => girarCard(card)}></img>
+                </FlashCard>
             }
             {virarCard === 1 &&
                 <CardPergunta>
-                    <p>{question}</p>
-                    <img src={girar} alt="Card Pergunta" onClick={() => girarCard(card)}></img>
+                    <p data-test="flashcard-text">{question}</p>
+                    <img data-test="turn-btn" src={girar} alt="Card Pergunta" onClick={() => girarCard(card)}></img>
                 </CardPergunta>
             }
             {virarCard === 2 &&
                 <CardResposta>
-                    <p>{answer}</p>
+                    <p data-test="flashcard-text">{answer}</p>
                     <div>
                         <button>Não lembrei</button>
                         <button>Quase não lembrei</button>

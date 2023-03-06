@@ -3,15 +3,15 @@ import ListaCards from "./components/ListaCards";
 import Footer from "./components/Footer";
 import styled from "styled-components";
 import { useState } from "react";
+import CARDS from "./mock"
 
 export default function App() {
   const [contador, setContador] = useState(0);
-
   return (
     <ContainerApp>
       <Topo />
       <ListaCards contador={contador} setContador={setContador} />
-      <Footer />
+      <Footer contador={contador} quantidaDeDeCards={CARDS.length} />
     </ContainerApp>
   );
 }

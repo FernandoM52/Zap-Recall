@@ -3,8 +3,6 @@ import icones from "./icones";
 import girar from "../assets/imgs/seta_virar.png";
 import { useState } from "react";
 
-
-
 export default function Card({ pergunta, resposta, index, contador, setContador }) {
 
     const [virarCard, setVirarCard] = useState(0);
@@ -26,7 +24,6 @@ export default function Card({ pergunta, resposta, index, contador, setContador 
         setContador(novoContador);
         setVirarCard(0);
     }
-
 
     return (
         <>

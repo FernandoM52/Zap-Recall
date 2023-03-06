@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-export default function Footer() {
+export default function Footer({ contador, quantidaDeDeCards }) {
     return (
         <Rodape>
-            <p data-test="footer">0/4 CONCLUÍDOS</p>
+            <p data-test="footer">{contador}/{quantidaDeDeCards} CONCLUÍDOS</p>
         </Rodape>
     );
 

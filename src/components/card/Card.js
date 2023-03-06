@@ -1,7 +1,7 @@
 import icones from "../icones";
 import girar from "../../assets/imgs/seta_virar.png";
 import { useState } from "react";
-import { FlashCard, CardPergunta, CardResposta } from "./cardStyle"
+import { FlashCard, CardPergunta, CardResposta } from "./cardStyle";
 
 export default function Card({ pergunta, resposta, index, contador, setContador }) {
     const [virarCard, setVirarCard] = useState(0);
@@ -15,9 +15,7 @@ export default function Card({ pergunta, resposta, index, contador, setContador 
 
     function girarCard() {
         const proximoCard = virarCard + 1;
-        if (virarCard === 0 && !respondido) {
-            setVirarCard(proximoCard);
-        } else if (virarCard === cardPergunta || virarCard === cardResposta) {
+        if ((virarCard === 0 && !respondido) || (virarCard === cardPergunta || virarCard === cardResposta)) {
             setVirarCard(proximoCard);
         }
     }

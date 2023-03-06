@@ -14,7 +14,7 @@ position: fixed;
 z-index: 2;
 bottom: 0;
 background-color: #ffffff;
-width: 375px;
+width: 100%;
 height: 70px;
 display: flex;
 align-items: center;

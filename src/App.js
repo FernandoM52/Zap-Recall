@@ -19,7 +19,7 @@ export default function App() {
 
 const ContainerApp = styled.div`
 background-color: #FB6B6B;
-width: 375px;
+width: 100%;
 height: 100%;
 margin: 0 auto ;
 display: flex;

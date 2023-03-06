@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FlashCard = styled.li`
 background-color: #FFFFFF;
-width: 300px;
+width: 500px;
 height: 65px;
 margin-top: 51px;
 border-radius: 5px;
@@ -10,6 +10,9 @@ box-shadow: 0px 4px 5px 0px #00000026;
 display: flex;
 justify-content: space-between;
 align-items: center;
+@media (max-width: 768px){
+    width: 300px;
+}
 
 p{
 padding-left: 15px;
@@ -61,7 +64,7 @@ img{
 
 export const CardResposta = styled.li`
 background-color: #FFFFD4;
-width: 300px;
+width: 500px;
 min-height: 131px;
 margin-top: 51px;
 padding-bottom: 10px;
@@ -69,6 +72,10 @@ border-radius: 5px;
 box-shadow: 0px 4px 5px 0px #00000026;
 display: flex;
 flex-direction: column;
+
+@media (max-width: 768px){
+    width: 300px;
+}
 
 p{
 color: #333333;
@@ -81,15 +88,18 @@ line-height: 21px;
 }
 
 div{
-    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    margin: 20px auto;
+    justify-content: space-evenly;
+    gap: 15px;
+    @media (max-width: 768px){
+    width: 300px;
+}
 }
 
 button{
-    width: 85px;
-    height: 37px;
+    width: 120px;
+    height: 50px;
     margin-top: 22px;
     border: none;
     border-radius: 5px;
@@ -100,6 +110,10 @@ button{
     text-decoration: #FFFFFF;
     color: #FFFFFF;
     cursor: pointer;
+    @media (max-width: 768px){
+        width: 85px;
+        height: 37px;
+    }
 }
 
 button:nth-child(1){
